@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TechMart - Warehouse Capacity Optimizer</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <header class="header">
+
+        <h1>TechMart</h1>
+
+        <p>Warehouse Capacity Optimizer</p>
+
+    </header>
+
+
+    <main class="container">
+
+
+        <!-- Warehouse Capacity Section -->
+
+        <section class="capacity-section">
+
+            <h2>Warehouse Capacity</h2>
+
+            <label for="capacity">
+                Enter warehouse capacity (kg):
+            </label>
+
+            <input
+                type="number"
+                id="capacity"
+                min="1"
+                value="30"
+            >
+
+            <button id="optimize-button" type="button">
+                Optimize Warehouse
+            </button>
+
+        </section>
+
+
+        <!-- Products Section -->
+
+        <section>
+
+            <h2>Available Products</h2>
+
+            <div id="product-list" class="product-grid">
+            </div>
+
+        </section>
+
+
+        <!-- Result Section -->
+
+        <section class="result-section">
+
+            <h2>Optimization Result</h2>
+
+            <div class="result-box">
+
+                <p>
+                    Maximum Value:
+                    <span id="max-value">₹0</span>
+                </p>
+
+                <p>
+                    Total Weight:
+                    <span id="total-weight">0 kg</span>
+                </p>
+
+            </div>
+
+
+            <h3>Selected Products</h3>
+
+            <div id="selected-products">
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <script src="data.js"></script>
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
